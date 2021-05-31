@@ -77,7 +77,7 @@
     apt: 
       name: "{{ package_name }}"
       update_cache: yes
-      state: latest
+      state: present
     become: yes
 
   - name: Set up redis host name
